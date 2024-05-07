@@ -3,7 +3,7 @@ using StulSoft.Json.Data;
 
 namespace StulSoft.Json
 {
-    internal record Record2(string Name, int Age)
+    internal record Record2(string Name, int? Age)
     {
         /// <summary>
         /// Creates the Record2 from a JSON.
@@ -26,6 +26,8 @@ namespace StulSoft.Json
             Console.WriteLine("Logging Program");
 
             Test1();
+            Test2();
+            Test3();
         }
 
         private static void Test1()
@@ -40,6 +42,27 @@ namespace StulSoft.Json
 
             var rec3 = Record2.FromJson(json);
             Console.WriteLine($"rec3: {rec3}");
+        }
+
+        private static void Test2()
+        {
+            Console.WriteLine("==>Test2");
+            var json = @"{""name"":""the name""}";
+            var rec1 = Record1.FromJson(json);
+            if (rec1 != null)
+            {
+                Console.WriteLine($"rec1: {rec1}");
+                var aTestResult = rec1.Age == null;
+                Console.WriteLine($"aTestResult: {aTestResult}");
+            }
+        }
+
+        private static void Test3()
+        {
+            Console.WriteLine("==>Test3");
+            var json = @"{""name"":""the name"", ""age"":65, ""nonDefined"": ""test""}";
+            var rec2 = JsonConvert.DeserializeObject<Record2>(json);
+            Console.WriteLine($"rec2: {rec2}");
         }
     }
 }
