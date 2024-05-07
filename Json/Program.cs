@@ -28,6 +28,7 @@ namespace StulSoft.Json
             Test1();
             Test2();
             Test3();
+            Test4();
         }
 
         private static void Test1()
@@ -63,6 +64,13 @@ namespace StulSoft.Json
             var json = @"{""name"":""the name"", ""age"":65, ""nonDefined"": ""test""}";
             var rec2 = JsonConvert.DeserializeObject<Record2>(json);
             Console.WriteLine($"rec2: {rec2}");
+        }
+
+        private static void Test4()
+        {
+            Console.WriteLine("==>Test4");
+            TextJsonTests.Test1();
+            TextJsonTests.Test2();
         }
     }
 }
