@@ -27,5 +27,12 @@ namespace WpfAppMW
         {
             Close();
         }
+
+        private void NextWindow1_Click(object sender, RoutedEventArgs e)
+        {
+            var nextWindow1 = new NextWindow1();
+            nextWindow1.Owner = this;
+            nextWindow1.ShowDialog();
+        }
     }
 }
