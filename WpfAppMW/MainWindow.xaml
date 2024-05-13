@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:WpfAppMW"
         mc:Ignorable="d"
         Title="WpfAppMW" Height="450" Width="800">
-    <Grid>
-        <Menu VerticalAlignment="Top" HorizontalAlignment="Left" 
-            Height="20" Width="50">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
             <MenuItem Header="Actions">
                 <MenuItem Header="Action 1" Click="MenuItem_Click1"/>
                 <MenuItem Header="Action 2" Click="MenuItem_Click2"/>
+                <Separator/>
+                <MenuItem Header="Close" Click="MenuItem_Close"/>
             </MenuItem>
         </Menu>
-    </Grid>
+    </DockPanel>
 </Window>

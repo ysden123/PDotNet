@@ -22,5 +22,10 @@ namespace WpfAppMW
             MessageBox.Show("This is the action 2");
 
         }
+
+        private void MenuItem_Close(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
