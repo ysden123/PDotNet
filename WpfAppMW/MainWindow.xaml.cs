@@ -34,5 +34,19 @@ namespace WpfAppMW
             nextWindow1.Owner = this;
             nextWindow1.ShowDialog();
         }
+
+        private void SomeDialog_Click(object sender, RoutedEventArgs e)
+        {
+            var someDialogData = new SomeDialogData("Initial");
+            var someDialog = new SomeDialog(someDialogData);
+            someDialog.Owner = this;
+            if (someDialog.ShowDialog() == true)
+            {
+                MessageBox.Show(someDialogData.T1);
+            }else
+            {
+                MessageBox.Show("Not OK clicked");
+            }
+        }
     }
 }

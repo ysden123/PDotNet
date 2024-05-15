@@ -12,6 +12,7 @@
                 <MenuItem Header="Action 1" Click="MenuItem_Click1"/>
                 <MenuItem Header="Action 2" Click="MenuItem_Click2"/>
                 <MenuItem Header="Next Window 1" Click="NextWindow1_Click"/>
+                <MenuItem Header="Some dialog" Click="SomeDialog_Click"/>
                 <Separator/>
                 <MenuItem Header="Close" Click="MenuItem_Close"/>
             </MenuItem>

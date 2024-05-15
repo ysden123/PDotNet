@@ -11,5 +11,10 @@ namespace WpfAppMW
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.t1.Text = "Button clicked";
+        }
     }
 }

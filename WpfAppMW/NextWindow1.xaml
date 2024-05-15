@@ -10,7 +10,7 @@
         <DockPanel DockPanel.Dock="Top">
             <Label BorderThickness="2" Content="The label 1: " BorderBrush="Black" DockPanel.Dock="Left"/>
             <TextBox x:Name="t1" FontSize="13"  DockPanel.Dock="Left" >The text box</TextBox>
-            <Button DockPanel.Dock="Left" Width="70">Click text</Button>
+            <Button DockPanel.Dock="Left" Width="70" Cursor="Hand" Click="Button_Click">Click text</Button>
         </DockPanel>
 
         <Label  DockPanel.Dock="Top">The label 2</Label>

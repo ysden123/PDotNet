@@ -1,5 +1,5 @@
 ﻿
-namespace BasicTests.PValues
+namespace StulSoft.BasicTests.PValues
 {
     internal class PStructs
     {
