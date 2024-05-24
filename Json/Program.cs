@@ -29,6 +29,7 @@ namespace StulSoft.Json
             Test2();
             Test3();
             Test4();
+            Test5();
         }
 
         private static void Test1()
@@ -71,6 +72,33 @@ namespace StulSoft.Json
             Console.WriteLine("==>Test4");
             TextJsonTests.Test1();
             TextJsonTests.Test2();
+        }
+
+        private static void Test5()
+        {
+            Console.WriteLine("==>Test5");
+            string json = """
+                {
+                    "id": 1,
+                    "theObject":{
+                        "name": "It is an object",
+                        "age": 54
+                    }
+                }
+                """;
+
+            ComplexData? cd1 = ComplexData.FromJson(json);
+            Console.WriteLine(cd1);
+
+            if (cd1 != null){
+                SimpleData? sd1 = JsonConvert.DeserializeObject<SimpleData>(JsonConvert.SerializeObject(cd1.theObject));
+                Console.WriteLine($"sd1: {sd1}");
+            }
+            
+
+            ComplexData cd2 = new ComplexData(1, new SimpleData("a name 22", 43));
+            string json2 = JsonConvert.SerializeObject(cd2);
+            Console.WriteLine($"json2: {json2}");
         }
     }
 }
