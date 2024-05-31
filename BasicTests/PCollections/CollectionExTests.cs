@@ -2,6 +2,8 @@
 {
     internal class CollectionExTests
     {
+        private record Person(string name, int age);
+
         [SetUp]
         public void Setup()
         {
@@ -28,6 +30,49 @@
             Console.WriteLine("Changed collection:");
             numbers.ForEach(x => Console.Write($"{x} "));
             Console.WriteLine();
+        }
+
+        [Test]
+        public void FilteringTest()
+        {
+#pragma warning disable IDE0090
+            var dic1 = new Dictionary<string, List<Person>>()
+            {
+                {"name1", new List<Person>()
+                    {
+                        new Person("name1", 1),
+                        new Person("name1", 2),
+                        new Person("name1", 3)
+                    }
+                },
+                {"name2", new List<Person>()
+                    {
+                        new Person("name2", 10),
+                        new Person("name2", 20)
+                    }
+                }
+            };
+
+            foreach (var item in dic1)
+            {
+                Console.WriteLine($"{item.Key} - {string.Join(", ", item.Value)}");
+            }
+
+            var dic2 = dic1.Where(item => item.Key == "name1").ToDictionary<string, List<Person>>();
+            Console.WriteLine("selected 1");
+            foreach (var item in dic2)
+            {
+                Console.WriteLine($"{item.Key} - {string.Join(", ", item.Value)}");
+            }
+
+            var dic3 = (from item in dic1
+                       where item.Key == "name1"
+                       select item).ToDictionary<string,List<Person>>();
+            Console.WriteLine("selected 2");
+            foreach (var item in dic3)
+            {
+                Console.WriteLine($"{item.Key} - {string.Join(", ", item.Value)}");
+            }
         }
     }
 }
