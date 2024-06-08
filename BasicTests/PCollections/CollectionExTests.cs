@@ -1,4 +1,6 @@
-﻿namespace StulSoft.BasicTests.PCollections
+﻿using System.Linq;
+
+namespace StulSoft.BasicTests.PCollections
 {
     internal class CollectionExTests
     {
@@ -73,6 +75,48 @@
             {
                 Console.WriteLine($"{item.Key} - {string.Join(", ", item.Value)}");
             }
+        }
+
+        [Test]
+        public void SortTest()
+        {
+            var list1 = new List<string>()
+            {
+                "line1",
+                "line3",
+                "line2"
+            };
+            Console.WriteLine("Unsorted list:");
+            foreach(var i in list1)
+                Console.WriteLine(i);
+
+            list1.Sort();
+            Console.WriteLine("Sorted list:");
+            foreach (var i in list1)
+                Console.WriteLine(i);
+
+
+            var values = new List<Environment.SpecialFolder>();
+            foreach (var item in Enum.GetValues(typeof(Environment.SpecialFolder)))
+            {
+                values.Add((Environment.SpecialFolder)item);
+            }
+            Console.WriteLine("Unsorted values:");
+            foreach (var i in values)
+                Console.WriteLine(i);
+
+            var names = Enum.GetNames(typeof(Environment.SpecialFolder)).ToList<string>();
+            names.Sort();
+
+            var sortedValues = new List<Environment.SpecialFolder>();
+            foreach (var name in names)
+            {
+                Enum.TryParse<Environment.SpecialFolder>(name, out var result);
+                sortedValues.Add(result);
+            }
+            Console.WriteLine("Sorted values:");
+            foreach(var i in sortedValues)
+                Console.WriteLine(i);
         }
     }
 }
