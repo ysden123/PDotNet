@@ -64,6 +64,8 @@ namespace PCrypto
                     {
                         // Compute the hash of the input file.
                         byte[] hashValue = hmac.ComputeHash(inStream);
+
+                        Console.WriteLine($"Hash value: {Convert.ToHexString(hashValue)}");
                         // Reset inStream to the beginning of the file.
                         inStream.Position = 0;
                         // Write the computed hash value to the output file.
