@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="WpfUIEx.GridEx01"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfUIEx"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="10,10,10,10" ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">Label 1</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="Text1" VerticalAlignment="Center" Text="Try this" Margin="10,10,10,10"/>
+        <Label Grid.Row="1" Grid.Column="0">Label 2</Label>
+        <TextBox x:Name="Text2" Grid.Row="1" Grid.Column="1" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="10,10,10,10">
+            This is the 1st line 
+        </TextBox>
+    </Grid>
+</UserControl>
