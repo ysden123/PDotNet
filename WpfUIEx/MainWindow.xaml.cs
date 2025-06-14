@@ -14,11 +14,11 @@ namespace WpfUIEx
             // Create logger File. This logger will be used globally.
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
-                .Enrich.With(new ThreadIdEnricher())
-            .WriteTo.File("logs/WpfUIEx.log",
-                rollingInterval: RollingInterval.Day,
-                outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {SourceContext} [{ThreadId}] {Message:lj}{NewLine}{Exception}")
-            .CreateLogger();
+                .Enrich.WithThreadId()
+                .WriteTo.File("logs/WpfUIEx.log",
+                    rollingInterval: RollingInterval.Day,
+                    outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {SourceContext} [{ThreadId}] {Message:lj}{NewLine}{Exception}")
+                .CreateLogger();
 
             InitializeComponent();
 
