@@ -12,6 +12,7 @@
                 <MenuItem Header="Progress bar 1" Click="ProgressBar1Click"/>
                 <MenuItem Header="Progress bar 2" Click="ProgressBar2Click"/>
                 <MenuItem Header="Grid Ex1" Click="GridEx1Click"/>
+                <MenuItem Header="Event handlers" Click="EventHandlersMenuItem_Click"/>
             </MenuItem>
         </Menu>
         <ContentControl x:Name="CC"/>

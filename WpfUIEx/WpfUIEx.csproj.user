@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="EventHandlerEx1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GridEx01.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

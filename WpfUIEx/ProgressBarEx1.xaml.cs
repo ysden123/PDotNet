@@ -5,6 +5,8 @@ namespace WpfUIEx
 {
     /// <summary>
     /// Interaction logic for ProgressBarEx1.xaml
+    /// <br/>
+    /// The code for a lengthy process is within the user control class.
     /// </summary>
     public partial class ProgressBarEx1 : UserControl
     {
