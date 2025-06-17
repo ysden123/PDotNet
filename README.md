@@ -1,2 +1,0 @@
-# PDotNet
-Playing with .Net
