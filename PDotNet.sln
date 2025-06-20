@@ -21,6 +21,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadTests", "MultiTh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTIOPerformance", "MTIOPerformance\MTIOPerformance.csproj", "{04654928-12CD-4CFE-A98B-6A5574E8907C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBindingTwoWays", "WPFDataBindingTwoWays\WPFDataBindingTwoWays.csproj", "{6F62DBD2-2605-455C-8D73-777BBD9DF671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBindingOneWay", "WPFDataBindingOneWay\WPFDataBindingOneWay.csproj", "{1B83D0E9-3140-0B3E-02B2-8DFD57DE228C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF MVVM", "WPF MVVM", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDemo", "MVVMDemo\MVVMDemo.csproj", "{EC24D6C8-F6D6-42A0-9989-109BD377B01F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Binding", "Data Binding", "{60B3E4B2-1C5A-4A82-819B-2D29B691DC6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,9 +73,26 @@ Global
 		{04654928-12CD-4CFE-A98B-6A5574E8907C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04654928-12CD-4CFE-A98B-6A5574E8907C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04654928-12CD-4CFE-A98B-6A5574E8907C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F62DBD2-2605-455C-8D73-777BBD9DF671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F62DBD2-2605-455C-8D73-777BBD9DF671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F62DBD2-2605-455C-8D73-777BBD9DF671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F62DBD2-2605-455C-8D73-777BBD9DF671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B83D0E9-3140-0B3E-02B2-8DFD57DE228C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B83D0E9-3140-0B3E-02B2-8DFD57DE228C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B83D0E9-3140-0B3E-02B2-8DFD57DE228C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B83D0E9-3140-0B3E-02B2-8DFD57DE228C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC24D6C8-F6D6-42A0-9989-109BD377B01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC24D6C8-F6D6-42A0-9989-109BD377B01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC24D6C8-F6D6-42A0-9989-109BD377B01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC24D6C8-F6D6-42A0-9989-109BD377B01F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F62DBD2-2605-455C-8D73-777BBD9DF671} = {60B3E4B2-1C5A-4A82-819B-2D29B691DC6C}
+		{1B83D0E9-3140-0B3E-02B2-8DFD57DE228C} = {60B3E4B2-1C5A-4A82-819B-2D29B691DC6C}
+		{EC24D6C8-F6D6-42A0-9989-109BD377B01F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB2A3546-56ED-4A08-8475-CF12ECCA4E20}

@@ -1,0 +1,5 @@
+= WPFDataBindingTwoWays
+
+It is an example of the WPF application with data binding for mode _TwoWays_.
+
+See https://www.tutorialspoint.com/wpf/wpf_data_binding.htm[WPF - Data Binding]
