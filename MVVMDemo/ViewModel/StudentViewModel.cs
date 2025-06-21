@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Diagnostics.Metrics;
 using static MVVMDemo.Model.StudentModel;
 
 namespace MVVMDemo.ViewModel
@@ -11,8 +12,6 @@ namespace MVVMDemo.ViewModel
             set;
         }
 
-        public int StudentCounter { get; set; }
-
         public void LoadStudents()
         {
             ObservableCollection<Student> students =
@@ -23,7 +22,11 @@ namespace MVVMDemo.ViewModel
             ];
 
             Students = students;
-            StudentCounter = Students.Count;
+        }
+
+        public void AddStudent(string firstName, string lastName)
+        {
+            Students?.Add(new Student { FirstName = firstName, LastName = lastName });
         }
     }
 }

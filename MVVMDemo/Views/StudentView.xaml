@@ -26,8 +26,9 @@
             </ItemsControl>
             <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
                 <Label>Students counter:</Label>
-                <Label Content="{Binding Path=StudentCounter}"/>
+                <Label Content="{Binding Path=Students.Count}"/>
             </StackPanel>
+            <Button x:Name="AddStudent_Button" Click="AddStudent_Button_Click">Add student</Button>
         </StackPanel>
     </Grid>
 </UserControl>
