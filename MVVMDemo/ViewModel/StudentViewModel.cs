@@ -11,6 +11,8 @@ namespace MVVMDemo.ViewModel
             set;
         }
 
+        public int StudentCounter { get; set; }
+
         public void LoadStudents()
         {
             ObservableCollection<Student> students =
@@ -21,6 +23,7 @@ namespace MVVMDemo.ViewModel
             ];
 
             Students = students;
+            StudentCounter = Students.Count;
         }
     }
 }
