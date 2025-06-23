@@ -38,8 +38,11 @@ namespace WpfAppMW
         private void SomeDialog_Click(object sender, RoutedEventArgs e)
         {
             var someDialogData = new SomeDialogData("Initial");
-            var someDialog = new SomeDialog(someDialogData);
-            someDialog.Owner = this;
+            var someDialog = new SomeDialog(someDialogData)
+            {
+                Owner = this
+            };
+
             if (someDialog.ShowDialog() == true)
             {
                 MessageBox.Show(someDialogData.T1);
