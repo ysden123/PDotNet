@@ -1,5 +1,0 @@
-= MVVMDemo
-
-It is an example of the WPF application with MVVM.
-
-See https://www.tutorialspoint.com/mvvm/index.htm[MVVM Tutorial]
