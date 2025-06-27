@@ -1,8 +1,7 @@
-﻿using Json.Data;
-using StulSoft.Json.Data;
+﻿using PJson.Data;
 using System.Text.Json;
 
-namespace StulSoft.Json
+namespace PJson
 {
     /// <summary>
     /// Usage of the System.Text.Json.

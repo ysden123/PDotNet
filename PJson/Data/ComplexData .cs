@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace StulSoft.Json.Data
+namespace PJson.Data
 {
     /// <summary>
     /// Contains the general object.

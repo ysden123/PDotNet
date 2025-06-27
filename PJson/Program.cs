@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using StulSoft.Json.Data;
+using PJson.Data;
 
-namespace StulSoft.Json
+namespace PJson
 {
     /// <summary>
     /// Demonstartes some manipulations with JSON.

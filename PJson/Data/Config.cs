@@ -1,8 +1,6 @@
-﻿using StulSoft.Json;
-using StulSoft.Json.Data;
-using System.Text.Json;
+﻿using System.Text.Json;
 
-namespace Json.Data
+namespace PJson.Data
 {
     /// <summary>
     /// Contains an array of an objects.

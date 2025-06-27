@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace StulSoft.Json.Data
+namespace PJson.Data
 {
     internal record SimpleData(string? name, int? age)
     {
