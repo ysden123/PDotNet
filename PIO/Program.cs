@@ -18,7 +18,7 @@ namespace PIO
             //ConsoleEx1.OutputSameLine();
             //ConsoleEx1.OutputSameLineWithFormat();
 
-            CreateDirs.CreateDirEx01();
+            //CreateDirs.CreateDirEx01();
         }
     }
 }
