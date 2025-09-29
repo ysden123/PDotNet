@@ -1,4 +1,4 @@
-﻿namespace StulSoft.BasicTests;
+namespace StulSoft.BasicTests;
 
 public record Person(string Name, string City);
 
