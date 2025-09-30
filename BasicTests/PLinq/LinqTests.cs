@@ -57,7 +57,7 @@ public class LinqService
     public static int[] ConvertStringsToIntsAndSortIt()
     {
         var strings = new string[] { "0042", "17", "52" };
-        return strings.Select(s => Int32.Parse(s)).OrderBy(i => i).ToArray();
+        return [.. strings.Select(s => Int32.Parse(s)).OrderBy(i => i)];
     }
 }
 
