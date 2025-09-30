@@ -1,7 +1,0 @@
-= PCrypto
-
-Playing with cryptography.
-
-== References
-
-* https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha512?view=net-8.0[HMACSHA512 Class]
