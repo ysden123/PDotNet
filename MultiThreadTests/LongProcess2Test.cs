@@ -1,4 +1,6 @@
-﻿namespace MultiThreadTests;
+﻿using YSCommon;
+
+namespace MultiThreadTests;
 
 public class LongProcess2Test
 {

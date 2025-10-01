@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="common">
+      <HintPath>..\..\common-cs\common\bin\Release\net9.0-windows\common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

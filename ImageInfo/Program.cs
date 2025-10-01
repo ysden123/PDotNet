@@ -26,9 +26,9 @@ namespace ImageInfo
                              .OfType<GpsDirectory>()
                              .FirstOrDefault();
 
-            var location = gps.GetGeoLocation();
+            var location = gps!.GetGeoLocation();
 
-            Console.WriteLine("Image at {0},{1}", location.Latitude, location.Longitude);
+            Console.WriteLine("Image at {0},{1}", location!.Latitude, location.Longitude);
             var url = $"https://www.google.com/maps/search/?api=1&query={location.Latitude.ToString()},{location.Longitude.ToString()}";
             Console.WriteLine(url);
         }
