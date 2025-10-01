@@ -2,4 +2,4 @@
 Playing with cryptography.
 
 ## References
-* [Class](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha512?view=net-8.0[HMACSHA512)
+* [HMACSHA512 Class](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmacsha512?view=net-8.0[HMACSHA512)

@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace PIO
+﻿namespace PIO
 {
     internal class DirList
     {
