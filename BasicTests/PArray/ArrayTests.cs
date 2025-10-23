@@ -21,7 +21,6 @@ public class ArrayTests
     [Test]
     public void TwoDimensionArrayTest()
     {
-        //int[,] arr = new int[,] { { 1, 2, 3 }, { 4, 5, 6 } };
         int[,] arr = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
         Assert.That(arr, Has.Length.EqualTo(6));
         using (Assert.EnterMultipleScope())
@@ -44,7 +43,7 @@ public class ArrayTests
                 arr[i, j] = i * 2 + j + 1;
             }
         }
-        Assert.That(arr.Length, Is.EqualTo(4));
+        Assert.That(arr, Has.Length.EqualTo(4));
         using (Assert.EnterMultipleScope())
         {
             Assert.That(arr.GetLength(0), Is.EqualTo(2));
@@ -67,5 +66,24 @@ public class ArrayTests
         string? result = Array.Find<string>((string[])strings, static s => s != null && s.StartsWith('t'));
 
         Assert.That(result, Is.EqualTo("two"));
+    }
+
+    [Test]
+    public void TwoDotsArrayTest()
+    {
+        int[] ar1 = [1, 2, 3];
+        int[] ar2 = [10, 20, 30];
+        int[] ar3 = [100, 200, 300];
+
+        int[] arr = [.. ar1, .. ar2, .. ar3];   // 1,2,3,10,20,30,100,200,300
+        Assert.That(arr, Has.Length.EqualTo(9));
+        Assert.That(arr[0], Is.EqualTo(1));
+        Assert.That(arr[3], Is.EqualTo(10));
+        Assert.That(arr[6], Is.EqualTo(100));
+
+        foreach (int i in arr)
+        {
+            Console.WriteLine(i);
+        }
     }
 }

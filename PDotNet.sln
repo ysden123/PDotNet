@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRESTApi", "PRESTApi\PRESTA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MThreading", "MThreading\MThreading.csproj", "{5558D538-E3C3-7ED7-9742-75E28C4A814E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassTests", "ClassTestes\ClassTests.csproj", "{4613B6E4-74F1-42A6-A23D-37832E5C03B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{5558D538-E3C3-7ED7-9742-75E28C4A814E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5558D538-E3C3-7ED7-9742-75E28C4A814E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5558D538-E3C3-7ED7-9742-75E28C4A814E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4613B6E4-74F1-42A6-A23D-37832E5C03B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4613B6E4-74F1-42A6-A23D-37832E5C03B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4613B6E4-74F1-42A6-A23D-37832E5C03B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4613B6E4-74F1-42A6-A23D-37832E5C03B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
