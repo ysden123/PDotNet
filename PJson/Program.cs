@@ -19,6 +19,9 @@ namespace PJson
             Test5();
             Test6();
             Test7();
+
+            Test11();
+            Test12();
         }
 
         /// <summary>
@@ -117,6 +120,19 @@ namespace PJson
         {
             Console.WriteLine("==>Test7");
             TextJsonTests.Test4();
+        }
+
+        private static void Test11()
+        {
+            Console.WriteLine("==>Test11");
+            var deser = new DeserializeWithoutObjectClass();
+            deser.Test1();
+        }
+
+        private static void Test12()
+        {
+            Console.WriteLine("==>Test12");
+            SerializeWithoutObjectClass.Test1();
         }
     }
 }
