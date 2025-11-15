@@ -10,7 +10,7 @@ namespace StulSoft.BasicTests.PValues
 
             public MutablePoint(int x, int y) => (X, Y) = (x, y);
 
-            public override string ToString() => $"({X}, {Y})";
+            public override readonly string ToString() => $"({X}, {Y})";
         }
         static void MutateAndDisplay(MutablePoint p)
         {

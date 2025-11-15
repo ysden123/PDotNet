@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace PJson
 {
@@ -21,7 +22,8 @@ namespace PJson
                 ""Street"": ""123 Main St"",
                 ""City"": ""Anytown"",
                 ""ZipCode"": ""12345""
-            }
+            },
+            ""NikNames"": [""Johnny"", ""JD""]
         }";
 
         public void Test1()
@@ -42,6 +44,20 @@ namespace PJson
             JsonElement address = root.GetProperty("Address");
             string city = address.GetProperty("City").GetString() ?? string.Empty;
             Console.WriteLine($"City: {city}");
+
+            // Access array
+            int arrayLength = root.GetProperty("NikNames").GetArrayLength();
+            Console.WriteLine($"arrayLength = {arrayLength}");
+            List<string> nikNames = [];
+            foreach (var item in root.GetProperty("NikNames").EnumerateArray())
+            {
+                nikNames.Add(item.GetString() ?? string.Empty);
+            }
+            Console.WriteLine("nikNames:");
+            foreach (var name in nikNames)
+            {
+                Console.WriteLine($" - {name}");
+            }
 
             // Access a property that may not exist
             try
