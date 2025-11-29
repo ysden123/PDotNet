@@ -1,4 +1,4 @@
-﻿namespace StulSoft.BasicTests;
+﻿namespace StulSoft.BasicTests.PLinq;
 
 public class LineListToDictionaryTest
 {

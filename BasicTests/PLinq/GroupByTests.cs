@@ -1,10 +1,10 @@
-namespace StulSoft.BasicTests;
+namespace StulSoft.BasicTests.PLinq;
 
 public record Person(string Name, string City);
 
 public class GroupByTests
 {
-    private static List<Person> people =
+    private static readonly List<Person> people =
     [
         new("Иван", "Москва"),
         new( "Анна", "Москва"),
