@@ -19,12 +19,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NUnit3TestAdapter" Version="5.2.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="6.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="common">
-      <HintPath>..\..\common-cs\common\bin\Release\net9.0-windows\common.dll</HintPath>
+      <HintPath>..\..\common-cs\common\bin\Release\net10.0-windows\common.dll</HintPath>
     </Reference>
   </ItemGroup>
 
