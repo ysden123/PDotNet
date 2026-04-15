@@ -1,4 +1,4 @@
-﻿# ClassTests
+﻿# ClassMSTests
 
 Playing around with class definitions and their behaviors in C#.
 

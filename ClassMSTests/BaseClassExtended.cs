@@ -1,6 +1,6 @@
-﻿namespace ClassTests
+﻿namespace ClassMSTests
 {
-    public class BaseClassExtended: BaseClass
+    public class BaseClassExtended : BaseClass
     {
         override public string GetInfo()
         {

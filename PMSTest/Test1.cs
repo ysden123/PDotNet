@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-
-namespace PMSTest
+﻿namespace PMSTest
 {
     [TestClass]
     [DoNotParallelize]

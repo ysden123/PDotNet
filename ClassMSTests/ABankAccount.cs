@@ -1,4 +1,4 @@
-﻿namespace ClassTests
+﻿namespace ClassMSTests
 {
     // Abstract class representing a bank account
     public abstract class ABankAccount(string accountNumber, decimal initialBalance)

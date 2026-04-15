@@ -1,4 +1,4 @@
-﻿namespace ClassTests
+﻿namespace ClassMSTests
 {
     public class BaseClass
     {

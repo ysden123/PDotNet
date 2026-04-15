@@ -1,5 +1,6 @@
-﻿namespace ClassTests
+﻿namespace ClassMSTests
 {
+
     internal interface IMessage
     {
         public string GetMessage();

@@ -1,4 +1,4 @@
-﻿namespace ClassTests
+﻿namespace ClassMSTests
 {
     internal class MessageTwo: IMessage
     {
